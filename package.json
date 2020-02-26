@@ -1,0 +1,22 @@
+{
+  "name": "lifepoints-calculator",
+  "version": "1.0.0",
+  "description": "This is a lifepoint tracker that can take all the math out of playing the tabletop Yu-Gi-Oh trading card game.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rperry99/ygo-lifepoint-calculator.git"
+  },
+  "author": "Russell Perry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rperry99/ygo-lifepoint-calculator/issues"
+  },
+  "homepage": "https://github.com/rperry99/ygo-lifepoint-calculator#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

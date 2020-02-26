@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Trade+Winds&display=swap");
+* {
+  font-family: "Trade Winds", Arial, Helvetica, sans-serif; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; }
+
+#calculator {
+  width: 50%; }
+  #calculator #players {
+    width: 100%; }
+  #calculator .player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px; }
+    #calculator .player div {
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+      font-size: 1.25rem; }
+    #calculator .player input {
+      outline: none;
+      border: none;
+      font-size: 1.5rem;
+      padding: 0;
+      margin: 0; }
+    #calculator .player input::placeholder {
+      text-align: center; }
+    #calculator .player button {
+      height: 50px;
+      width: 50px;
+      font-size: 2rem;
+      outline: none;
+      border: none; }
+    #calculator .player .plus {
+      background: green; }
+    #calculator .player .minus {
+      background: red; }
+    #calculator .player .lp {
+      margin-right: 25px; }
+  #calculator #player1 {
+    margin-bottom: 5px; }
+  #calculator #pointInput {
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.15rem; }
+  #calculator #numbers {
+    display: grid;
+    grid-template-areas: "one two three four five" "six seven eight nine zeroNum";
+    width: 100%;
+    height: 100px; }
+    #calculator #numbers div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: solid 1px black;
+      margin: 2px; }
+    #calculator #numbers #one {
+      grid-area: one; }
+    #calculator #numbers #two {
+      grid-area: two; }
+    #calculator #numbers #three {
+      grid-area: three; }
+    #calculator #numbers #four {
+      grid-area: four; }
+    #calculator #numbers #five {
+      grid-area: five; }
+    #calculator #numbers #six {
+      grid-area: six; }
+    #calculator #numbers #seven {
+      grid-area: seven; }
+    #calculator #numbers #eight {
+      grid-area: eight; }
+    #calculator #numbers #nine {
+      grid-area: nine; }
+    #calculator #numbers #zeroNum {
+      grid-area: zeroNum; }
