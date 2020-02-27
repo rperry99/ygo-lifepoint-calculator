@@ -7,7 +7,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden; }
+  overflow: hidden;
+  flex-direction: column; }
 
 #calculator {
   width: 50%; }
@@ -55,18 +56,25 @@ body {
     width: 100%;
     border: none;
     outline: none;
-    font-size: 1.15rem; }
+    font-size: 1.25rem;
+    margin: 25px 0; }
   #calculator #numbers {
     display: grid;
-    grid-template-areas: "one two three four five" "six seven eight nine zeroNum";
-    width: 100%;
-    height: 100px; }
+    grid-template-areas: "one two three zeroNum" "four five six doubleZero" "seven eight nine tripleZero";
+    width: max-content;
+    margin: 0 auto;
+    height: 200px; }
     #calculator #numbers div {
       display: flex;
       justify-content: center;
       align-items: center;
       border: solid 1px black;
-      margin: 2px; }
+      margin: 2px;
+      width: 100px;
+      user-select: none;
+      transition: background 200ms ease-in-out; }
+      #calculator #numbers div:hover {
+        background: tan; }
     #calculator #numbers #one {
       grid-area: one; }
     #calculator #numbers #two {
@@ -87,3 +95,24 @@ body {
       grid-area: nine; }
     #calculator #numbers #zeroNum {
       grid-area: zeroNum; }
+    #calculator #numbers #doubleZero {
+      grid-area: doubleZero; }
+    #calculator #numbers #tripleZero {
+      grid-area: tripleZero; }
+  #calculator #actionButtons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px; }
+    #calculator #actionButtons button {
+      border: none;
+      outline: none;
+      height: 75px;
+      width: 75px; }
+    #calculator #actionButtons #reset {
+      background: red;
+      color: white; }
+    #calculator #actionButtons #clear {
+      background: orange;
+      color: white; }

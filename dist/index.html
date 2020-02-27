@@ -7,22 +7,27 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <h1>Life Point Calculator</h1>
     <div id="calculator">
       <div id="players">
         <div class="player" id="player1">
           <input type="text" placeholder="Player One" class="playerName" />
           <div class="lp">8000</div>
-          <button class="plus">+</button>
-          <button class="minus">-</button>
+          <div class="plusminus">
+            <button class="plus">+</button>
+            <button class="minus">-</button>
+          </div>
         </div>
         <div class="player" id="player2">
           <input type="text" placeholder="Player Two" class="playerName" />
           <div class="lp">8000</div>
-          <button class="plus">+</button>
-          <button class="minus">-</button>
+          <div class="plusminus">
+            <button class="plus">+</button>
+            <button class="minus">-</button>
+          </div>
         </div>
       </div>
-      <input id="pointInput" type="text" placeholder="0000" />
+      <input id="pointInput" type="text" placeholder="0000" readonly />
       <div id="numbers">
         <div id="one">1</div>
         <div id="two">2</div>
@@ -34,7 +39,19 @@
         <div id="eight">8</div>
         <div id="nine">9</div>
         <div id="zeroNum">0</div>
+        <div id="doubleZero">00</div>
+        <div id="tripleZero">000</div>
+      </div>
+      <div id="actionButtons">
+        <button id="reset">New Game</button>
+        <button id="clear">Clear</button>
       </div>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
   </body>
 </html>
