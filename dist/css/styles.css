@@ -43,9 +43,15 @@ body {
       outline: none;
       border: none; }
     #calculator .player .plus {
-      background: green; }
+      background: green;
+      transition: background 200ms ease-in-out; }
+      #calculator .player .plus:hover {
+        background: #079b07; }
     #calculator .player .minus {
-      background: red; }
+      background: red;
+      transition: background 200ms ease-in-out; }
+      #calculator .player .minus:hover {
+        background: #f74141; }
     #calculator .player .lp {
       margin-right: 25px; }
   #calculator #player1 {

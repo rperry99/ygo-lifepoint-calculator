@@ -52,9 +52,17 @@ body {
     }
     .plus {
       background: green;
+      transition: background 200ms ease-in-out;
+      &:hover {
+        background: rgb(7, 155, 7);
+      }
     }
     .minus {
       background: red;
+      transition: background 200ms ease-in-out;
+      &:hover {
+        background: rgb(247, 65, 65);
+      }
     }
     .lp {
       margin-right: 25px;
