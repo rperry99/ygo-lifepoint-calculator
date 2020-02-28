@@ -76,8 +76,8 @@ body {
     display: grid;
     grid-template-areas:
       "one two three zeroNum"
-      "four five six doubleZero"
-      "seven eight nine tripleZero";
+      "four five six zeroNum"
+      "seven eight nine zeroNum";
     width: max-content;
     margin: 0 auto;
     height: 200px;
@@ -123,12 +123,6 @@ body {
     }
     #zeroNum {
       grid-area: zeroNum;
-    }
-    #doubleZero {
-      grid-area: doubleZero;
-    }
-    #tripleZero {
-      grid-area: tripleZero;
     }
   }
   #actionButtons {

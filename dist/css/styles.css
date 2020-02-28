@@ -60,7 +60,7 @@ body {
     margin: 25px 0; }
   #calculator #numbers {
     display: grid;
-    grid-template-areas: "one two three zeroNum" "four five six doubleZero" "seven eight nine tripleZero";
+    grid-template-areas: "one two three zeroNum" "four five six zeroNum" "seven eight nine zeroNum";
     width: max-content;
     margin: 0 auto;
     height: 200px; }
@@ -95,10 +95,6 @@ body {
       grid-area: nine; }
     #calculator #numbers #zeroNum {
       grid-area: zeroNum; }
-    #calculator #numbers #doubleZero {
-      grid-area: doubleZero; }
-    #calculator #numbers #tripleZero {
-      grid-area: tripleZero; }
   #calculator #actionButtons {
     display: flex;
     justify-content: space-evenly;

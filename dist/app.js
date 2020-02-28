@@ -1,5 +1,6 @@
 $(document).ready(function() {
   let inputPoints = "";
+  let action;
   $("#reset").click(() => {
     $("#player1 .lp").html(8000);
     $("#player2 .lp").html(8000);
@@ -10,34 +11,10 @@ $(document).ready(function() {
     $("#pointInput").val("");
     inputPoints = "";
   });
-  $("#one").click(() => {
+  $(".numButton").click(function() {
     if (inputPoints.length < 4) {
-      if ($("#pointInput").val() === "") {
-        inputPoints = "1";
-      } else {
-        inputPoints += "1";
-      }
-      $("#pointInput").val(inputPoints);
+      inputPoints += $(this).html();
     }
-  });
-  $("#two").click(() => {
-    if (inputPoints.length < 4) {
-      if ($("#pointInput").val() === "") {
-        inputPoints = "2";
-      } else {
-        inputPoints += "2";
-      }
-      $("#pointInput").val(inputPoints);
-    }
-  });
-  $("#three").click(() => {
-    if (inputPoints.length < 4) {
-      if ($("#pointInput").val() === "") {
-        inputPoints = "3";
-      } else {
-        inputPoints += "3";
-      }
-      $("#pointInput").val(inputPoints);
-    }
+    $("#pointInput").val(inputPoints);
   });
 });
