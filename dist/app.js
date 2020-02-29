@@ -7,6 +7,8 @@ $(document).ready(function() {
   resetValues();
 
   $("#reset").click(() => {
+    player1Lp = 8000;
+    player2Lp = 8000;
     resetValues();
   });
 
