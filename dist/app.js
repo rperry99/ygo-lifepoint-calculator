@@ -24,20 +24,24 @@ $(document).ready(function() {
 
   $(".minus").click(function() {
     let player = $(this).attr("id");
-    if (player === "p1Minus") {
-      player1Lp -= parseInt(inputPoints);
-    } else if (player === "p2Minus") {
-      player2Lp -= parseInt(inputPoints);
+    if (inputPoints !== "") {
+      if (player === "p1Minus") {
+        player1Lp -= parseInt(inputPoints);
+      } else if (player === "p2Minus") {
+        player2Lp -= parseInt(inputPoints);
+      }
     }
     resetValues();
   });
 
   $(".plus").click(function() {
     let player = $(this).attr("id");
-    if (player === "p1Plus") {
-      player1Lp += parseInt(inputPoints);
-    } else if (player === "p2Plus") {
-      player2Lp += parseInt(inputPoints);
+    if (inputPoints !== "") {
+      if (player === "p1Plus") {
+        player1Lp += parseInt(inputPoints);
+      } else if (player === "p2Plus") {
+        player2Lp += parseInt(inputPoints);
+      }
     }
     resetValues();
   });
