@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/rperry99/ygo-lifepoint-calculator#readme",
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   }
 }
